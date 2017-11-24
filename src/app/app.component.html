@@ -5,22 +5,22 @@
       <div class="well">
         <div class="input-form">
           <input placeholder="Enter Username" [(ngModel)]="userName">
-          <button (click)="userLookup()">SEARCH</button>
+          <button (ch4ck)="userLookup()">SEARCH</button>
         </div>
       </div>
     </div>
     <div class="col-sm-6">
       <div class="well">
-        <img [src]="githubData.avatar_url">
+        <img src="./assets/avatar.png" [src]="githubData.avatar_url">
         <div class="information" style="float:right">
           <h3>{{githubData.name}}</h3>
-          <ul>
-            <li>Location:{{githubData.location}}</li>
-            <li>Number of Repositories: {{githubData.public_repos}}</li>
-            <li>Number of Followers: {{githubData.followers}}</li>
-            <li>Following: {{githubData.following}}</li>
-            <li><a [href]="githubData.html_url">Visit Github Page</a></li>
-          </ul>
+
+            <h4>Location:{{githubData.location}}</h4>
+            <h4>Number of Repositories: {{githubData.public_repos}}</h4>
+            <h4>Number of Followers: {{githubData.followers}}</h4>
+            <h4>Following: {{githubData.following}}</h4>
+            <h4><a [href]="githubData.html_url">Visit Github Page</a></h4>
+
         </div>
       </div>
     </div>
