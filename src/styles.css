@@ -19,3 +19,15 @@ h1{
   font-family: 'Zilla Slab Highlight', cursive;
   font-size: 50px;
 }
+
+#input{
+  height:400px;
+}
+
+#display{
+height: 400px;
+}
+
+.jumbotron{
+  background-color: #76D7C4;
+}
