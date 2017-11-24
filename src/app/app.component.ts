@@ -10,26 +10,15 @@ export class AppComponent {
 
   constructor(private http:Http){}
   userName="";
-  name="";
-  location="";
-  following="";
-  avatar="";
-  repo="";
-  pageUrl="";
-
+  githubData="";
+  
 
 userLookup(){
 this.http.get("https://api.github.com/users/"+this.userName)
 .subscribe(
   (response:Response)=>{
     const userData=response.json();
-    this.name=userData.name;
-    this.avatar=userData.avatar;
-    this.following=userData.following;
-    this.location=userData.location;
-    this.pageUrl=userData.pageUrl;
-    this.repo=userData.repo;
-
+    this.githubData=userData;
     console.log(userData);
   }
 )
