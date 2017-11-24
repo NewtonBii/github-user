@@ -12,7 +12,7 @@ export class AppComponent {
   userName="";
 
 userLookup(){
-this.http.get("https://api.github.com/users"+this.userName)
+this.http.get("https://api.github.com/users/"+this.userName)
 .subscribe(
   (response:Response)=>{
     const userData=response.json();
