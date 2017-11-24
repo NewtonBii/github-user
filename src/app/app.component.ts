@@ -10,8 +10,8 @@ export class AppComponent {
 
   constructor(private http:Http){}
   userName="";
-  githubData=[];
-  
+  githubData:any="";
+
 
 userLookup(){
 this.http.get("https://api.github.com/users/"+this.userName)
