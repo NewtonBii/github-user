@@ -1,8 +1,21 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Concert+One|Fredoka+One|Zilla+Slab+Highlight');
+
+/*font-family: 'Alfa Slab One', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Zilla Slab Highlight', cursive;*/
 
 img{
   height: 200px;
   width: 200px;
   background-image: url("./assets/avatar.png");
   background-size: contain;
+}
+*{
+font-family: 'Fredoka One', cursive;
+}
+h1{
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 50px;
 }
