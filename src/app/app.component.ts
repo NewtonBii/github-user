@@ -12,6 +12,11 @@ export class AppComponent {
   userName="";
   name="";
   location="";
+  following="";
+  avatar="";
+  repo="";
+  pageUrl="";
+
 
 userLookup(){
 this.http.get("https://api.github.com/users/"+this.userName)
@@ -19,7 +24,13 @@ this.http.get("https://api.github.com/users/"+this.userName)
   (response:Response)=>{
     const userData=response.json();
     this.name=userData.name;
-    console.log(userData)
+    this.avatar=userData.avatar;
+    this.following=userData.following;
+    this.location=userData.location;
+    this.pageUrl=userData.pageUrl;
+    this.repo=userData.repo;
+
+    console.log(userData);
   }
 )
 
