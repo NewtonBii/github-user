@@ -1,27 +1,30 @@
-# GithubUser
+# Github User Lookup
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+This project was created using [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+
+#Description
+This website allows a user to basically search a github user using their username. It returns the user information including, username, company, number of repositories, number of followers on github and the number of people they are following on github.
+
+##Setup and installation requirements.
+* clone repository.
+* Install Angular cli.
+* Run nmp install.
+* Install globals e.g. Typescript packages and typescript.
+* npm install typescript -g
+* apm install atom-typescript
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Technologies Used.
+* HTML
+* css
+* JavaScript
+* TypeScript
+* Node.js
+* Angular
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## License
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+MIT License. Copyright 2017 Newton Bii.
