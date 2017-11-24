@@ -10,7 +10,7 @@ export class AppComponent {
 
   constructor(private http:Http){}
   userName="";
-  githubData="";
+  githubData=[];
   
 
 userLookup(){
