@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Http, Response} from '@angular/http';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -15,11 +16,12 @@ export class AppComponent {
 
 
 userLookup(){
-this.http.get("https://api.github.com/users/"+this.userName)
+this.http.get("https://api.github.com/users/"+this.userName+"?access_token="+environment.access_token)
 .subscribe(
   (response:Response)=>{
     const userData=response.json();
     this.githubData=userData;
+
     this.avatarUrl=userData.avatar_url;
     console.log(userData);
   }
